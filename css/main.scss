@@ -1,0 +1,196 @@
+@import "_variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+  font-family: $font-stack;
+  box-sizing: border-box;
+}
+
+// GLOBAL CLASS LIST START
+
+.d-flex {
+  display: flex;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.btn-filled {
+  padding: 15px 25px;
+  background: $primary-color;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 3px solid transparent;
+  transition: 0.5s;
+
+  &:hover {
+    background: transparent;
+    color: $primary-color;
+  }
+}
+
+// GLOBAL CLASS LIST END
+
+html,
+body {
+  height: 100%;
+  background-color: black;
+}
+
+.section {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.508),
+      rgba(0, 0, 0, 0.508),
+      rgba(0, 0, 0, 0.508)
+    ),
+    url("/images/pexels-fauxels-3182812.jpg") no-repeat center/cover;
+}
+
+.header-top {
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.548);
+
+  ul li {
+    display: inline-block;
+  }
+
+  ul.contact {
+    li {
+      margin-right: 15px;
+
+      i {
+        margin-right: 5px;
+      }
+    }
+    color: $secondary-color;
+    font-size: 14px;
+    a {
+      color: $secondary-color;
+    }
+  }
+
+  ul.social {
+    li {
+      margin-right: 10px;
+      a {
+        font-size: 15px;
+        color: $secondary-color;
+      }
+    }
+  }
+  .search-button {
+    color: $secondary-color;
+    margin-left: 20px;
+  }
+}
+
+.navbar {
+  display: flex;
+  margin: 20px 40px;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    color: white;
+    font-size: 20px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+
+    ul li {
+      display: inline-block;
+      margin-right: 20px;
+
+      a {
+        color: $secondary-color;
+        transition: 0.5s;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .btn-filled {
+    margin-left: 30px;
+  }
+}
+
+.main {
+  .heading {
+    color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+
+    h1 {
+      font-weight: 200;
+      font-size: 55px;
+    }
+    h4 {
+      font-weight: 200;
+      font-size: 20px;
+    }
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-around;
+
+    .card {
+      color: $secondary-color;
+      padding: 0 40px;
+
+      .icon {
+      }
+    }
+  }
+}
